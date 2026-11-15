@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aparijit Chakraborty | Generative AI, ML and Data Analytics</title>
+<meta name="description" content="Computer Science Engineer building generative AI, predictive modelling and data visualization solutions. Published in IEEE and Springer Nature.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="assets/favicon.svg">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="d-net" viewBox="0 0 64 64"><circle cx="10" cy="14" r="4"/><circle cx="10" cy="32" r="4"/><circle cx="10" cy="50" r="4"/><circle cx="32" cy="22" r="4"/><circle cx="32" cy="42" r="4"/><circle cx="54" cy="32" r="4" class="s"/><path d="M14 14L28 22M14 14L28 42M14 32L28 22M14 32L28 42M14 50L28 22M14 50L28 42M36 22L50 32M36 42L50 32"/></symbol>
+<symbol id="d-spark" viewBox="0 0 64 64"><path class="s" d="M30 8q3 20 24 24-21 4-24 24-3-20-24-24 21-4 24-24z"/><path d="M52 6v10M47 11h10"/></symbol>
+<symbol id="d-chat" viewBox="0 0 64 64"><path d="M8 10h48a4 4 0 0 1 4 4v26a4 4 0 0 1-4 4H30L18 54V44H8a4 4 0 0 1-4-4V14a4 4 0 0 1 4-4z"/><path class="s" d="M20 27h.1M32 27h.1M44 27h.1" stroke-width="4"/></symbol>
+<symbol id="d-scatter" viewBox="0 0 64 64"><path d="M8 8v48h50"/><circle cx="18" cy="44" r="2.5"/><circle cx="24" cy="36" r="2.5"/><circle cx="31" cy="41" r="2.5"/><circle cx="37" cy="27" r="2.5"/><circle cx="45" cy="31" r="2.5"/><circle cx="51" cy="17" r="2.5"/><path class="s" d="M12 48L56 14"/></symbol>
+<symbol id="d-tree" viewBox="0 0 64 64"><path d="M32 12L16 30M32 12L48 30M16 30L8 50M16 30L24 50M48 30L40 50M48 30L56 50"/><circle class="s" cx="32" cy="10" r="5"/><circle cx="16" cy="30" r="4"/><circle cx="48" cy="30" r="4"/><circle cx="8" cy="52" r="3"/><circle cx="24" cy="52" r="3"/><circle cx="40" cy="52" r="3"/><circle cx="56" cy="52" r="3"/></symbol>
+<symbol id="d-cell" viewBox="0 0 64 64"><rect x="14" y="16" width="36" height="32" rx="5"/><path d="M4 32h10M50 32h10M32 4v12M32 48v12M24 40h16"/><circle cx="26" cy="27" r="4"/><circle class="s" cx="38" cy="27" r="4"/></symbol>
+<symbol id="d-bars" viewBox="0 0 64 64"><path d="M6 58h52"/><rect x="8" y="38" width="9" height="20"/><rect class="s" x="21" y="24" width="9" height="34"/><rect x="34" y="32" width="9" height="26"/><rect x="47" y="12" width="9" height="46"/></symbol>
+<symbol id="d-pie" viewBox="0 0 64 64"><circle cx="30" cy="34" r="22"/><path d="M30 34V12M30 34l19 11"/><path class="s" d="M34 30V8A22 22 0 0 1 53 41z"/></symbol>
+<symbol id="d-table" viewBox="0 0 64 64"><rect x="6" y="10" width="52" height="44" rx="3"/><path d="M6 24h52M6 38h52M24 10v44M42 10v44"/><rect class="s" x="24" y="24" width="18" height="14"/></symbol>
+<symbol id="d-db" viewBox="0 0 64 64"><ellipse cx="32" cy="14" rx="20" ry="8"/><path d="M12 14v36a20 8 0 0 0 40 0V14"/><path class="s" d="M12 32a20 8 0 0 0 40 0"/></symbol>
+<symbol id="d-code" viewBox="0 0 64 64"><path d="M22 18L8 32l14 14M42 18l14 14-14 14"/><path class="s" d="M36 12L28 52"/></symbol>
+<symbol id="d-pulse" viewBox="0 0 64 64"><path class="s" d="M4 34h16l6-14 8 32 6-22h20"/></symbol>
+</defs></svg>
+<svg class="doo bgd" id="bg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"></svg>
+<header><div class="wrap">
+<a class="logo" href="#top">Aparijit<i>.</i></a>
+<nav id="nav" aria-label="Sections"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#research">Research</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
+<button class="ib" id="theme" aria-label="Toggle dark mode"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button>
+<button class="ib" id="menu" aria-label="Open menu" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<p class="where">Bangalore, Karnataka, India</p>
+<h1>Aparijit Chakraborty</h1>
+<p class="roles">Generative AI engineer, <span>ML</span> builder, data storyteller</p>
+<p class="lede">Computer Science Engineer (B.Tech, 2026) who builds machine learning pipelines end to end: fine-tuning large language models, predictive modelling, and turning high-dimensional data into dashboards people can act on.</p>
+<div class="btns"><a class="btn p" href="#projects">View my work</a><a class="btn" href="#contact">Contact me</a></div>
+<div class="roofw"><svg class="doo roof" viewBox="0 0 1200 305" role="img" aria-label="Doodle of one roof over generative AI, machine learning and data storytelling work">
+<path id="rf" pathLength="1" d="M10 118L600 16l590 102"/>
+<path d="M30 118v144h1140V118"/><path d="M400 56v206M800 56v206" stroke-dasharray="3 8"/>
+<use href="#d-net" x="50" y="150" width="100" height="100"/><use href="#d-spark" x="170" y="145" width="90" height="90"/><use href="#d-chat" x="275" y="155" width="95" height="95"/><use href="#d-scatter" x="430" y="150" width="100" height="100"/><use href="#d-tree" x="555" y="150" width="100" height="100"/><use href="#d-cell" x="675" y="150" width="100" height="100"/><use href="#d-bars" x="830" y="150" width="100" height="100"/><use href="#d-pie" x="950" y="150" width="95" height="95"/><use href="#d-table" x="1060" y="155" width="95" height="95"/>
+<text x="215" y="296">Generative AI</text><text x="615" y="296">Machine learning</text><text x="1015" y="296">Data storytelling</text></svg><div class="house" role="img" aria-label="Doodle of one roof over generative AI, machine learning and data storytelling work"><svg class="doo rm" viewBox="0 0 360 84" aria-hidden="true"><path id="rf2" pathLength="1" d="M4 82L180 6l176 76"/></svg><div class="fls"><div class="fl"><span class="dd"><svg class="doo" viewBox="0 0 64 64" aria-hidden="true"><use href="#d-net" width="64" height="64"/></svg><svg class="doo" viewBox="0 0 64 64" aria-hidden="true"><use href="#d-spark" width="64" height="64"/></svg><svg class="doo" viewBox="0 0 64 64" aria-hidden="true"><use href="#d-chat" width="64" height="64"/></svg></span><b>Generative AI</b></div><div class="fl"><span class="dd"><svg class="doo" viewBox="0 0 64 64" aria-hidden="true"><use href="#d-scatter" width="64" height="64"/></svg><svg class="doo" viewBox="0 0 64 64" aria-hidden="true"><use href="#d-tree" width="64" height="64"/></svg><svg class="doo" viewBox="0 0 64 64" aria-hidden="true"><use href="#d-cell" width="64" height="64"/></svg></span><b>Machine learning</b></div><div class="fl"><span class="dd"><svg class="doo" viewBox="0 0 64 64" aria-hidden="true"><use href="#d-bars" width="64" height="64"/></svg><svg class="doo" viewBox="0 0 64 64" aria-hidden="true"><use href="#d-pie" width="64" height="64"/></svg><svg class="doo" viewBox="0 0 64 64" aria-hidden="true"><use href="#d-table" width="64" height="64"/></svg></span><b>Data storytelling</b></div></div></div></div>
+</div>
+<div class="wrap vitals">
+<div><b>2</b><small>Peer-reviewed publications, IEEE and Springer Nature</small></div>
+<div><b>0.968</b><small>R² for physics-informed biogas yield model</small></div>
+<div><b>1.8 s</b><small>Parcel image to full siting report</small></div>
+<div><b>8.1</b><small>CGPA, SRM Institute of Science and Technology</small></div>
+</div></div>
+
+<section id="about"><div class="wrap">
+<h2>About</h2>
+<div class="about">
+<div>
+<p>I blend enterprise software development with specialised work in generative AI, predictive modelling and data visualization. My projects range from a multimodal model that writes clinical reports from ECG signals to an Excel analytics suite on a decade of government inflation data.</p>
+<p>My algorithmic research is published with IEEE and Springer Nature, and I am looking for roles where I can own analytical and ML work from raw data to shipped solution.</p>
+</div>
+<dl class="facts">
+<div><dt>Degree</dt><dd>B.Tech, Computer Science</dd></div>
+<div><dt>Graduated</dt><dd>May 2026</dd></div>
+<div><dt>Focus</dt><dd>GenAI, ML, analytics</dd></div>
+<div><dt>Open to</dt><dd>Data science and ML roles</dd></div>
+</dl></div></div></section>
+
+<section id="skills"><div class="wrap">
+<h2>Skills</h2><p class="sub">The tools I reach for most often.</p>
+<div class="skills">
+<div><h3>Machine learning and AI</h3><ul class="tags"><li>Scikit-learn</li><li>LSTM</li><li>CNN</li><li>Gaussian Process</li><li>Genetic Algorithm</li><li>Deep Learning</li><li>Generative AI</li><li>PyTorch</li><li>Llama-3 and QLoRA</li></ul></div>
+<div><h3>Data analysis and visualization</h3><ul class="tags"><li>Excel</li><li>Power BI</li><li>DAX</li><li>NumPy</li><li>Pandas</li><li>Matplotlib</li><li>Seaborn</li><li>Jupyter</li></ul></div>
+<div><h3>Programming</h3><ul class="tags"><li>Python</li><li>SQL</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>FastAPI</li><li>React</li></ul></div>
+<div><h3>Working style</h3><ul class="tags"><li>Problem-solving</li><li>Analytical thinking</li><li>Critical thinking</li><li>Teamwork</li><li>Advanced aptitude</li></ul></div>
+</div></div></section>
+
+<section id="experience"><div class="wrap">
+<h2>Experience</h2><p class="sub">Hands-on internship work in data science.</p>
+<div class="row"><div class="when">Dec 2025 to Feb 2026<br>Remote</div><div>
+<h3>Data Science Intern</h3><p class="org">Corizo Edutech Pvt. Ltd.</p>
+<ul>
+<li>Built a pass/fail yield classifier for semiconductor manufacturing over 1,567 production entities and 591 sensor signals, handling missing values, pruning redundant features and correcting severe class imbalance with SMOTE.</li>
+<li>Benchmarked Logistic Regression, SVM, Random Forest and Naive Bayes; Random Forest and SVM generalised best, and the chosen model was saved with Joblib for inference.</li>
+<li>Analysed the NHANES 2020 adult survey in pure NumPy: engineered BMI, waist-to-height and waist-to-hip ratios, applied z-score standardisation and Pearson/Spearman correlation, and plotted gender-wise distributions.</li>
+</ul></div></div></div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Projects</h2><p class="sub">Generative AI, scientific ML and analytics work. Filter by focus.</p>
+<div class="filters" role="group" aria-label="Filter projects">
+<button aria-pressed="true" data-f="all">All</button><button aria-pressed="false" data-f="ai">Generative AI</button><button aria-pressed="false" data-f="ml">Machine learning</button><button aria-pressed="false" data-f="data">Data analytics</button></div>
+
+<p class="count" id="cnt" aria-live="polite"></p>
+<div id="plist">
+<div class="row" data-c="ai ml"><div class="when">Nov 2026</div><div>
+<h3>TerraGuard: Renewable Site Vision AI<span class="badge">Ongoing</span></h3><p class="org">Python, PyTorch, React, FastAPI, PostGIS</p>
+<ul><li>Engineered a five-layer land-image-to-report pipeline combining SegFormer segmentation, diffusion-based data assimilation, GraphCast/Aurora and CorrDiff downscaling, a physics-informed wind model and a GATv2 graph neural network suitability scorer. One parcel image becomes a full siting report in 1.8 s.</li>
+<li>Passed all 7 engineering validation gates (12/12 tests): 0.872 mIoU, 30.9% RMSE reduction from Bayesian assimilation and rank-stable scoring (τ = 1.00). A cyclic multi-agent workflow produces 25-year IRR, NPV and LCOE financials.</li></ul>
+<a class="l" href="https://github.com/aparijit05072004?tab=repositories" target="_blank" rel="noopener">GitHub</a></div></div>
+
+<div class="row" data-c="ai"><div class="when">Oct 2026</div><div>
+<h3>CardioScribe: Multimodal ECG-to-Report Generation<span class="badge">Ongoing</span></h3><p class="org">PyTorch, Wav2Vec 2.0, Q-Former, Llama-3, QLoRA</p>
+<ul><li>Architecting a signal-to-text pipeline that turns 10-second 12-lead ECGs into structured clinical reports. A frozen ECG-pretrained encoder connects to Llama-3-8B (4-bit QLoRA) through a 32-query Q-Former, trainable on a single 24 GB GPU.</li>
+<li>Guards against hallucination with diagnosis-driven prompting, PR/QRS/QTc/axis regression heads and a numeric-consistency validator. Design targets: macro-AUROC of at least 0.90 and under 5% hallucination on PTB-XL and MIMIC-IV-ECG (about 800k ECGs).</li></ul>
+<a class="l" href="https://github.com/aparijit05072004/CardioScribe-v2" target="_blank" rel="noopener">GitHub</a></div></div>
+
+<div class="row" data-c="ml"><div class="when">Mar 2026</div><div>
+<h3>Physics-Informed GPR for Biogas Yield Prediction<span class="badge">Under review at Springer</span></h3><p class="org">Python, Gaussian Process Regression, PyGAD</p>
+<ul><li>Built a physics-informed Gaussian Process framework that embeds Monod kinetics, Arrhenius temperature dependence, pH-activity coupling and Gompertz lifecycle dynamics in a hybrid kernel (60% RBF, 40% physics-derived).</li>
+<li>Reached R² = 0.968 (RMSE 4.21 cm³/day) in 5-fold cross-validation on 120 samples, beating RBF (0.941) and Matérn (0.953). A genetic algorithm found a 49% food-waste and 51% weed-biomass mix yielding 164.57 cm³/day.</li></ul>
+<a class="l" href="https://github.com/aparijit05072004?tab=repositories" target="_blank" rel="noopener">GitHub</a></div></div>
+
+<div class="row" data-c="data"><div class="when">Sept 2026</div><div>
+<h3>India CPI Inflation: End-to-End Excel Analytics</h3><p class="org">Python, Pandas, Excel, Matplotlib</p>
+<ul><li>Wrote a deterministic Python pipeline that cleans a raw Government of India CPI extract (2013 to 2023) into 375 validated rows, fixing six defects including a missing month and lockdown-period collection gaps.</li>
+<li>Delivered a live 14-sheet Excel workbook and a one-page executive dashboard (6 KPIs, 21 charts) backed by 856 automated checks in CI. Found that Food and Beverages make up 51.7% of the basket and that crude oil passes through to CPI with a 1 to 3 month lag.</li></ul>
+<a class="l" href="https://github.com/aparijit05072004/India-CPI-Inflation" target="_blank" rel="noopener">GitHub</a></div></div>
+
+<div class="row" data-c="data ml"><div class="when">Sept 2026</div><div>
+<h3>Global Multi-City AQI: Time-Series Regression</h3><p class="org">Python, Pandas, Scikit-learn, Seaborn</p>
+<ul><li>Analysed 52,560 hourly AQI readings across 6 cities, diagnosing severe PM2.5 and PM10 multicollinearity (VIF = 9.26) and a Simpson’s-paradox sign reversal in per-city correlations, then recovered the EPA-style rolling-window AQI formula from pollutant data alone.</li>
+<li>Compared 5 models on a strictly sequential 80/20 split to avoid autocorrelation leakage. Random Forest scored R² = 0.9984 against 0.8716 for linear regression, and an ablation showed city identity added nothing (ΔR² = 0.0000).</li></ul>
+<a class="l" href="https://github.com/aparijit05072004?tab=repositories" target="_blank" rel="noopener">GitHub</a></div></div>
+
+<div class="row" data-c="ml"><div class="when">April 2025</div><div>
+<h3>Anxiety Detection Using Speech and Text<span class="badge">Springer Nature</span></h3><p class="org">Python, LSTM, CNN</p>
+<ul><li>Built a dual-stream system that detects anxiety by fusing LSTM-based speech analysis with CNN-driven sentiment analysis, learning from acoustic and textual signals at once.</li>
+<li>Published as “Dual-Stream Anxiety Detection: LSTM-Based Speech Analysis and CNN-Driven Sentiment Analysis”.</li></ul>
+<a class="l" href="https://github.com/aparijit05072004?tab=repositories" target="_blank" rel="noopener">GitHub</a></div></div>
+
+<div class="row" data-c="ai"><div class="when">Sept 2024</div><div>
+<h3>Music Generator AI</h3><p class="org">PyTorch, MusicGen, LSTM</p>
+<ul><li>Built an end-to-end generative AI pipeline for audio synthesis using the MusicGen transformer and a sequential LSTM network in PyTorch.</li></ul>
+<a class="l" href="https://github.com/aparijit05072004?tab=repositories" target="_blank" rel="noopener">GitHub</a></div></div>
+</div></div></section>
+
+<section id="research"><div class="wrap">
+<h2>Research and achievements</h2><p class="sub">Published work and competition results.</p>
+<ul class="list">
+<li><span><b>Dual-Stream Anxiety Detection</b><br>Publication, Springer Nature</span><em>Jan 2026</em></li>
+<li><span><b>Efficient Cloud Resource Allocation (HGD-GBCO)</b><br>Publication, IEEE</span><em>Sept 2025</em></li>
+<li><span><b>eLSI Hackathon 2024</b><br>E-Yantra, IIT Bombay: Top 25 in All India Rank</span><em>April 2024</em></li>
+</ul>
+<h3 style="margin:44px 0 14px;font-size:24px">Trainings and certificates</h3>
+<ul class="list">
+<li><span>Career Essentials in Data Analysis, Microsoft and LinkedIn Learning</span><em>Apr 2026</em></li>
+<li><span>Data Analytics Job Simulation, Deloitte</span><em>Mar 2026</em></li>
+<li><span>Certificate of Accomplishment, Software Engineer, HackerRank</span><em>Feb 2026</em></li>
+<li><span>Computer Architecture, IITM Pravarakta Technologies Foundation and SRM University</span><em>May 2025</em></li>
+<li><span>Learning and Development with Generative AI in HR, Udemy</span><em>Apr 2025</em></li>
+<li><span>Cloud Infrastructure, Oracle</span><em>Mar 2025</em></li>
+<li><span>Machine Learning Foundations, AWS</span><em>Feb 2024</em></li>
+</ul></div></section>
+
+<section id="education"><div class="wrap">
+<h2>Education</h2><p class="sub">&nbsp;</p>
+<div class="row"><div class="when">Sep 2022 to May 2026<br>Chennai</div><div><h3>B.Tech, Computer Science and Engineering</h3><p class="org">SRM Institute of Science and Technology (KTR) · CGPA 8.1 / 10</p></div></div>
+<div class="row"><div class="when">2022</div><div><h3>Higher Secondary (WBCHSE)</h3><p class="org">82.00%</p></div></div>
+<div class="row"><div class="when">2020</div><div><h3>Secondary (WBBSE)</h3><p class="org">89.85%</p></div></div>
+</div></section>
+
+<section id="contact"><div class="wrap"><div class="contact">
+<h2>Let’s build something</h2>
+<p>I’m open to data science, machine learning and generative AI roles, and to collaborating on research. Email is the fastest way to reach me.</p>
+<div class="links">
+<a href="mailto:aparijitchakraborty@gmail.com" aria-label="Email" title="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+<a href="tel:+917200166521" aria-label="Phone" title="Phone"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+<a href="https://www.linkedin.com/in/aparijit-chakraborty-32b825247" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+<a href="https://github.com/aparijit05072004" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+</div></div></div></section>
+</main>
+
+<footer><div class="wrap"><span>© Aparijit Chakraborty</span><span>Bangalore, Karnataka</span></div></footer>
+
+<button class="fab" id="cz-open" aria-expanded="false" aria-controls="cz">Button style</button>
+<div id="cz" role="dialog" aria-label="Button style" hidden>
+<h3>Button style</h3>
+<div class="seg" role="group" aria-label="Style"><button data-s="glass">Glass</button><button data-s="solid">Solid</button><button data-s="outline">Outline</button></div>
+<label><span>Transparency <output id="vt"></output></span><input type="range" id="rt" min="0" max="100"></label>
+<label><span>Glass blur <output id="vb"></output></span><input type="range" id="rb" min="0" max="24"></label>
+<button id="rs">Reset to default</button></div>
+<script src="js/main.js" defer></script>
+</body>
+</html>
