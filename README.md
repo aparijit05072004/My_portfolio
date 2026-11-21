@@ -4,7 +4,7 @@ Static portfolio site (HTML, CSS, JavaScript). No build step.
 
 ```
 index.html        page content
-css/style.css     theme, doodles, button styles
+css/style.css     design tokens (light/dark), layout, diagrams, button styles
 js/main.js        theme toggle, project filter, button-style panel, background doodles
 assets/           favicon
 ```
@@ -27,5 +27,5 @@ assets/           favicon
 - **Projects:** each project is a `.row` inside `#plist` in `index.html`. Its `data-c` attribute sets which filter tabs show it: `ai`, `ml`, `data`, or several separated by spaces.
 - **Contact icons:** Mail, Phone, LinkedIn and GitHub live in `<div class="links">` in the `#contact` section of `index.html`.
 - **Project links:** replace the repositories-page GitHub links in Projects with the exact repo URLs.
-- **Colours:** edit the variables at the top of `css/style.css`.
-- **Button defaults:** change `def` in `js/main.js` (`s` style, `t` transparency, `b` blur).
+- **Colours and fonts:** edit the tokens at the top of `css/style.css` (`--sig` is the accent; fonts are Inter and JetBrains Mono).
+- **Button defaults:** change `def` in `js/main.js` (`s` style: `solid`, `glass` or `outline`; `t` transparency; `b` blur).

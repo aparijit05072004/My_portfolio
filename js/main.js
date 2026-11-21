@@ -20,13 +20,13 @@ function filter(f){var n=0;rows.forEach(function(r){var on=f==="all"||r.dataset.
 $$(".filters button").forEach(function(b){b.onclick=function(){$$(".filters button").forEach(function(o){o.setAttribute("aria-pressed",o===b)});filter(b.dataset.f)}});
 filter("all");
 /* button style panel */
-var def={s:"glass",t:85,b:7},st=Object.assign({},def);
-try{Object.assign(st,JSON.parse(localStorage.getItem("btn")||"{}"))}catch(e){}
+var def={s:"solid",t:85,b:7},st=Object.assign({},def);
+try{Object.assign(st,JSON.parse(localStorage.getItem("btnStyle")||"{}"))}catch(e){}
 function apply(){var f=100-st.t;root.setAttribute("data-btn",st.s);root.style.setProperty("--fill",f+"%");root.style.setProperty("--fill2",Math.min(100,f+20)+"%");root.style.setProperty("--blur",st.b+"px");
 $("#rt").value=st.t;$("#rb").value=st.b;$("#vt").textContent=st.t+"%";$("#vb").textContent=st.b+"px";
 $$(".seg button").forEach(function(x){x.setAttribute("aria-pressed",x.dataset.s===st.s)});
 $("#rt").disabled=$("#rb").disabled=st.s!=="glass";
-try{localStorage.setItem("btn",JSON.stringify(st))}catch(e){}}
+try{localStorage.setItem("btnStyle",JSON.stringify(st))}catch(e){}}
 $$(".seg button").forEach(function(x){x.onclick=function(){st.s=x.dataset.s;apply()}});
 $("#rt").oninput=function(){st.t=+this.value;apply()};$("#rb").oninput=function(){st.b=+this.value;apply()};
 $("#rs").onclick=function(){st=Object.assign({},def);apply()};
